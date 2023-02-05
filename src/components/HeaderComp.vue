@@ -20,7 +20,7 @@
   }
   </script>
   
-  <style>
+  <style lang="scss">
   .header {
     color: red
   }
