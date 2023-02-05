@@ -1,7 +1,14 @@
 <template>
-
-  <Userform/>
+  <componentFirst/>
+  
   <!--
+  <componentA/>
+  <parentComponent/>
+  <watcherThree/>
+  <watcherTwo/>
+  <WatcherComp/>
+  <Userform/>
+  
   <ComputedPropertyFirst/>
   <ComputedPropertySecond/>
   <Methods/>
@@ -19,8 +26,16 @@ import Variable from './components/variables/Variable.vue';
 import Methods from './components/methods/Methods.vue';
 import ComputedPropertyFirst from './components/computed/ComputedPropertyFirst.vue';
 import ComputedPropertySecond from './components/computed/ComputedPropertySecond.vue';
-*/
 import Userform from './components/forms/Userform.vue';
+
+import WatcherComp from './components/watchers/watcher-comp.vue';
+import watcherTwo from './components/watchers/watcher-two.vue';
+import watcherThree from './components/watchers/watcher-three.vue';
+import parentComponent from './components/props/parent-component.vue';
+import componentA from './components/provide-inject/component-a.vue';
+*/
+
+import componentFirst from './components/provide-inject/component-first.vue';
 
 export default {
   name: 'App',
@@ -32,8 +47,16 @@ export default {
     Methods,
     ComputedPropertyFirst,
     ComputedPropertySecond,
-    */
-    Userform
+    Userform,
+    WatcherComp,
+    watcherTwo,
+    watcherThree,
+    parentComponent,
+    componentA
+    */    
+    
+    componentFirst
+    
   }
 }
 </script>
