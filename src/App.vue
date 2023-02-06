@@ -1,7 +1,8 @@
 <template>
-  <componentFirst/>
   
+  <emitParentComponent/>
   <!--
+  <componentFirst/>
   <componentA/>
   <parentComponent/>
   <watcherThree/>
@@ -33,9 +34,10 @@ import watcherTwo from './components/watchers/watcher-two.vue';
 import watcherThree from './components/watchers/watcher-three.vue';
 import parentComponent from './components/props/parent-component.vue';
 import componentA from './components/provide-inject/component-a.vue';
-*/
-
 import componentFirst from './components/provide-inject/component-first.vue';
+*/
+import emitParentComponent from './components/emits/emit-parent-component.vue';
+
 
 export default {
   name: 'App',
@@ -52,10 +54,12 @@ export default {
     watcherTwo,
     watcherThree,
     parentComponent,
-    componentA
-    */    
-    
+    componentA,
     componentFirst
+    */ 
+    emitParentComponent   
+    
+    
     
   }
 }
@@ -69,7 +73,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-.full-border {
+.full-border ,.border-grey {
  border: 1px solid #2c3e50;
  padding: 1rem;
  margin:1rem 0;
