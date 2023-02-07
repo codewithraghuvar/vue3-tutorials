@@ -1,7 +1,10 @@
 <template>
+  <slotData/>
   
-  <emitParentComponent/>
+  
   <!--
+  <InputField v-model="name"/>
+  <emitParentComponent/>
   <componentFirst/>
   <componentA/>
   <parentComponent/>
@@ -35,9 +38,12 @@ import watcherThree from './components/watchers/watcher-three.vue';
 import parentComponent from './components/props/parent-component.vue';
 import componentA from './components/provide-inject/component-a.vue';
 import componentFirst from './components/provide-inject/component-first.vue';
-*/
 import emitParentComponent from './components/emits/emit-parent-component.vue';
 
+import InputField from './components/custom-model/InputField.vue';
+*/
+
+import slotData from './components/slots/slot-component.vue';
 
 export default {
   name: 'App',
@@ -55,12 +61,16 @@ export default {
     watcherThree,
     parentComponent,
     componentA,
-    componentFirst
-    */ 
-    emitParentComponent   
-    
-    
-    
+    componentFirst,
+    emitParentComponent,
+    InputField
+    */    
+    slotData
+  },
+  data() {
+    return {
+      name: ''
+    }
   }
 }
 </script>
@@ -77,6 +87,13 @@ export default {
  border: 1px solid #2c3e50;
  padding: 1rem;
  margin:1rem 0;
+}
+
+.card-wrapper {
+  width: 400px;
+  margin:1rem;
+  border: 1px solid #2c3e50;
+  padding: 1rem;
 }
 
 </style>
