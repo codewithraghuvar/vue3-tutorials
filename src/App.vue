@@ -1,7 +1,8 @@
 <template>
-  <tabsComp/> 
   
-  <!--    
+  <parentRef/>
+  <!-- 
+  <tabsComp/>    
   <slotData/>
   <InputField v-model="name"/>
   <emitParentComponent/>
@@ -41,9 +42,10 @@ import componentFirst from './components/provide-inject/component-first.vue';
 import emitParentComponent from './components/emits/emit-parent-component.vue';
 import InputField from './components/custom-model/InputField.vue';
 import slotData from './components/slots/slot-component.vue';
-*/
-
 import tabsComp from './components/dynamic-component/tabs-comp.vue';
+*/
+import parentRef from './components/refs/parent-ref.vue';
+
 
 
 export default {
@@ -65,10 +67,10 @@ export default {
     componentFirst,
     emitParentComponent,
     InputField
-     slotData,
-    */    
-   
+    slotData,     
     tabsComp
+    */    
+    parentRef
   },
   data() {
     return {
